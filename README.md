@@ -1,32 +1,46 @@
-# React + TypeScript + Vite
+# Lingo Premium Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Lingo is a fictional AI language-learning product. This repository contains the source code for a highly polished, responsive landing page designed to look like a premium modern startup launch on Product Hunt.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Interactive Product Mockups:** A functional lesson UI that provides instant feedback (correct/incorrect states) and increments XP, demonstrating the core product experience without a backend.
+- **Dark/Light Mode:** Seamless theme toggling using Tailwind CSS v4. The default is set to Light mode, with a Sun/Moon toggle in the navigation bar.
+- **Restrained Motion & Micro-interactions:** Subtle fade-ins, hover states, and transitions that make the page feel alive and polished.
+- **Fully Responsive:** Carefully crafted layouts that look perfect on mobile (390px) up to large desktop monitors (1440px+).
+- **Hidden Easter Egg:** Click the Lingo leaf logo 5 times to trigger a secret bonus!
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** React + TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS v4
+- **Icons:** Lucide React
 
-## Expanding the Oxlint configuration
+## 💻 Running Locally
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+To run the project locally, ensure you have Node.js installed, then execute:
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+The application will be available at `http://localhost:5173`.
+
+## 🚢 Deployment
+
+This project is configured to be easily deployed on Vercel.
+
+1. Push your code to a GitHub repository.
+2. Go to your Vercel Dashboard and click **Add New Project**.
+3. Import this repository.
+4. Vercel will automatically detect Vite and use the correct build settings (`npm run build` with `dist` output).
+5. Click **Deploy**.
+
+## 📝 Design Decisions
+
+See [DECISIONS.md](./DECISIONS.md) for details on the implementation strategy, trade-offs, and verification steps.
